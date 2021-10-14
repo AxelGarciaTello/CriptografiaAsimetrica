@@ -18,13 +18,11 @@ int MillerRabin(long int n){
   srand(time(NULL));
   a = rand()%(n-1)+1;
   b = exponenciacion(a,m,n);
-  if(b == 1){
+  if(b == 1)
     return 1;
-  }
   for(i = 0; i < k; i++){
-    if(b == n-1){
+    if(b == n-1)
       return 1;
-    }
     b = exponenciacion(b,2,n);
   }
   return 0;
