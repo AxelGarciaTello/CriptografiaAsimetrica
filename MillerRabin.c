@@ -30,6 +30,16 @@ int MillerRabin(long int n){
 
 int main(void) {
   long int n;
+  /*register long int n = 10000000000;
+  for(;n < 100000000000; n++){
+      if(!(n%2 == 0 || n%5 == 0)){
+          if(MillerRabin(n)){
+              printf("Numero primo: %ld\n",n);
+              break;
+          }
+      }
+  }*/
+
   printf("Introduce un número: \n");
   scanf("%ld",&n);
   if(MillerRabin(n)){

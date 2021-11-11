@@ -44,10 +44,14 @@ int main(int argc, char const *argv[]) {
       r1,
       r;
 
-  printf("Escribe dos numero\n");
+  printf("Escribe el módulo m\n");
   scanf("%d",&r0);
+  printf("Escribe el número a encontrar su inverso multiplicativo\n");
   scanf("%d",&r1);
   r = inversoMultiplicativo(r0,r1);
-  printf("%d\n",r);
+  if(r==-1)
+    printf("No tiene inverso multiplicativo\n");
+  else
+    printf("El inverso multiplicativo es: %d\n",r);
   return 0;
 }
